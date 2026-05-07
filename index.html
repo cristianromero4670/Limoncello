@@ -1,83 +1,116 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Link page artesanal de Limoncello Tlaquepaque con acceso a Instagram, ubicación y catálogo."
-    />
-    <title>Limoncello Tlaquepaque | Galería artesanal</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- The Seasons no está en Google Fonts; se usa fallback elegante similar -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
+  <meta
+    name="description"
+    content="Limoncello Tlaquepaque, galería artesanal premium. Descubre Instagram, WhatsApp, ubicación y catálogo en una experiencia visual elegante."
+  />
 
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="bg-overlay" aria-hidden="true"></div>
+  <title>Limoncello Tlaquepaque | Galería Artesanal</title>
 
-    <main class="container">
-      <header class="hero reveal">
-        <p class="hero__kicker">Galería artesanal</p>
-        <h1>Limoncello Tlaquepaque</h1>
-        <p class="hero__subtitle">
-          Una selección de piezas únicas que celebran la tradición y el diseño
-          contemporáneo.
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <main class="page">
+
+    <!-- Hero -->
+    <section class="hero">
+
+      <div class="overlay"></div>
+
+      <div class="hero-content">
+
+        <p class="eyebrow">Galería Artesanal</p>
+
+        <h1>
+          Limoncello
+          <span>Tlaquepaque</span>
+        </h1>
+
+        <p class="description">
+          Piezas artesanales cuidadosamente seleccionadas para transformar
+          espacios en experiencias visuales cálidas y contemporáneas.
         </p>
-      </header>
 
-      <section class="cards" aria-label="Enlaces principales">
-        <a
-          class="card card--instagram reveal"
-          href="https://www.instagram.com/limoncello_tlaquepaque?igsh=OWxyZWlqdTJ3bHJ3"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div class="card__content">
-            <h2>Explora nuestro Instagram</h2>
-            <p>Descubre nuestras piezas y novedades</p>
-            <span class="card__cta">Abrir Instagram</span>
-          </div>
-        </a>
+        <div class="buttons">
 
-        <a
-          class="card card--maps reveal"
-          href="https://maps.app.goo.gl/qP7YtFYkr8doS1pXA?g_st=ic"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div class="card__content">
-            <h2>Visítanos</h2>
-            <p>Encuentra nuestra galería en Tlaquepaque</p>
-            <span class="card__cta">Ver en Google Maps</span>
-          </div>
-        </a>
+          <a
+            href="https://www.instagram.com/limoncello_tlaquepaque/"
+            target="_blank"
+            class="btn primary"
+          >
+            Instagram
+          </a>
 
-        <a
-          class="card card--catalog reveal"
-          href="https://drive.google.com/file/d/1d99kbZji4_5EqLGbgkI4rjc4PU8SVx9_/view?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div class="card__content">
-            <h2>Catálogo de productos</h2>
-            <p>Explora nuestras piezas disponibles</p>
-            <span class="card__cta">Abrir catálogo</span>
-          </div>
-        </a>
-      </section>
+          <a
+            href="https://wa.me/523327999368"
+            target="_blank"
+            class="btn secondary"
+          >
+            WhatsApp
+          </a>
 
-      <footer class="footer reveal">
-        <p>Hecho con esencia artesanal</p>
-      </footer>
-    </main>
+          <a
+            href="https://maps.app.goo.gl/QCkmbaCdHvBLLnW1A"
+            target="_blank"
+            class="btn secondary"
+          >
+            Ubicación
+          </a>
 
-    <script src="script.js"></script>
-  </body>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Showcase -->
+    <section class="showcase">
+
+      <div class="card">
+        <h2>Diseño Artesanal</h2>
+
+        <p>
+          Texturas, materiales y formas que conectan tradición con diseño contemporáneo.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Experiencia Visual</h2>
+
+        <p>
+          Una curaduría elegante inspirada en la atmósfera de galerías premium.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Hecho para Inspirar</h2>
+
+        <p>
+          Cada pieza busca crear ambientes cálidos, sofisticados y memorables.
+        </p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
 </html>
