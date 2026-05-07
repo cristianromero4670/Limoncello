@@ -1,23 +1,27 @@
-// Animación de entrada con intersección para mantener un efecto suave y progresivo.
-const revealElements = document.querySelectorAll('.reveal');
+const revealItems = document.querySelectorAll('.reveal');
 
-const observer = new IntersectionObserver(
-  (entries, obs) => {
+const revealObserver = new IntersectionObserver(
+  (entries, observer) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        obs.unobserve(entry.target);
+      if (!entry.isIntersecting) {
+        return;
       }
+
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target);
     });
   },
   {
     threshold: 0.14,
-    rootMargin: '0px 0px -8% 0px'
+    rootMargin: '0px 0px -6% 0px'
   }
 );
 
-revealElements.forEach((el, index) => {
-  // Pequeño delay escalonado para dar más sensación de ritmo visual.
-  el.style.transitionDelay = `${index * 70}ms`;
-  observer.observe(el);
+revealItems.forEach((item, index) => {
+  item.style.transitionDelay = `${index * 90}ms`;
+  revealObserver.observe(item);
+});
+
+window.addEventListener('load', () => {
+  document.body.classList.add('page-loaded');
 });
